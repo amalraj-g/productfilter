@@ -12,6 +12,8 @@ searchBox.addEventListener("keyup",(event)=>{
                 box.style.display="none";
             }
         });
+        
+        
         buttons.forEach((button)=>{
             button.classList.remove("btn-clicked");
         });
