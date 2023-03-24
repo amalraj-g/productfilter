@@ -5,6 +5,7 @@ const searchBox=document.querySelector("#search");
 searchBox.addEventListener("keyup",(event)=>{
     searchText=event.target.value.toLowerCase().trim();
         boxes.forEach((box)=>{
+
             const data=box.dataset.item;
             if(data.includes(searchText)){
                 box.style.display="block";
@@ -21,6 +22,7 @@ searchBox.addEventListener("keyup",(event)=>{
 });
 
 buttons.forEach((button)=>{
+    
     button.addEventListener("click",(event)=>{
         event.preventDefault();
         setActiveBtn(event);
